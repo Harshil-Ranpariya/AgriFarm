@@ -1,0 +1,26 @@
+body {
+      background: linear-gradient(135deg, #2e7d32 0%, #4CAF50 100%);
+      min-height: 100vh;
+    }
+    .container {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .bid-card {
+      border-left: 4px solid #4CAF50;
+      transition: transform 0.2s;
+    }
+    .bid-card:hover {
+      transform: translateX(5px);
+    }
+    .live-badge {
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }

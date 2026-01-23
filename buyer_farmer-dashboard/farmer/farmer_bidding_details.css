@@ -1,0 +1,31 @@
+body {
+      background: linear-gradient(135deg, #2e7d32 0%, #4CAF50 100%);
+      min-height: 100vh;
+    }
+    .container {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .bid-row {
+      border-left: 4px solid #4CAF50;
+      transition: all 0.3s;
+    }
+    .bid-row:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .bid-row.won {
+      border-left-color: #28a745;
+      background: #d4edda;
+    }
+    .bid-row.lost {
+      border-left-color: #dc3545;
+      opacity: 0.7;
+    }
+    .live-update {
+      color: #28a745;
+      animation: pulse 2s infinite;
+    }

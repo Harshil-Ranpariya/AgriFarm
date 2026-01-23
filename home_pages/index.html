@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriFarm - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-seedling"></i> AgriFarm
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link btn-login" href="../buyer_farmer-dashboard/login/Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-signup" href="../buyer_farmer-dashboard/login/Registration.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Welcome to <span class="highlight">AgriFarm</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Connect with fellow farmers, share knowledge, and grow together in our sustainable agricultural community.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="../buyer_farmer-dashboard/login/Registration.html" class="btn btn-primary">
+                                <i class="fas fa-user-plus"></i> Get Started
+                            </a>
+                            <a href="features.html" class="btn btn-outline">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Farmers</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Resources</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Communities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <i class="fas fa-tractor main-icon"></i>
+                            <div class="floating-icons">
+                                <i class="fas fa-leaf icon-1"></i>
+                                <i class="fas fa-seedling icon-2"></i>
+                                <i class="fas fa-water icon-3"></i>
+                                <i class="fas fa-sun icon-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-products" class="products-grid">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Our Products</h2>
+                <p>Explore approved products uploaded by our farmers</p>
+            </div>
+            <div class="row g-4" id="our-products-list">
+            </div>
+
+            <div class="products-ticker mt-4">
+                <div class="section-header text-center" style="margin-bottom:1.5rem;">
+                    <h3 style="font-size:1.5rem;">Fresh Arrivals</h3>
+                </div>
+                <div class="ticker-viewport" id="productsTicker">
+                    <div class="ticker-track" id="productsTickerTrack">
+                        <!-- Edit these cards: replace src and name. Duplicate to add more. -->
+                        <div class="ticker-card">
+                            <div class="media"><img src="../images/wheat.png" alt="Sample Product 1"></div>
+                            <div class="body">Wheat</div>
+                        </div>
+                        <div class="ticker-card">
+                            <div class="media"><img src="../images/rice.png" alt="Sample Product 2"></div>
+                            <div class="body">Rice</div>
+                        </div>
+                        <div class="ticker-card">
+                            <div class="media"><img src="../images/juvar.png" alt="Sample Product 3"></div>
+                            <div class="body">Juvar </div>
+                        </div>
+
+                        <div class="ticker-card">
+                            <div class="media"><img src="../images/juvar.png" alt="Sample Product 3"></div>
+                            <div class="body">Juvar </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-shelf mt-5">
+                <div class="section-header d-flex align-items-center justify-content-between">
+                    <h3 style="font-size:1.6rem; margin:0;">Top Deals</h3>
+                    <div class="shelf-controls">
+                        <button class="shelf-btn prev" id="shelfPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <button class="shelf-btn next" id="shelfNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="shelf-viewport" id="dealShelf">
+                    <div class="shelf-track" id="dealShelfTrack">
+                        <!-- Cards will be injected from products_api.php -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <h3><i class="fas fa-seedling"></i> AgriFarm</h3>
+                        <p>Growing communities, one farmer at a time.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/share/1HkR8s369g/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://x.com/FarmAgri92459"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/agri_farm.2025?igsh=MXJzNXpqMTY2N241OA=="><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/agri-farm-13820139a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Farming Guides</a></li>
+                        <li><a href="#">Best Practices</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Expert Advice</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> agrifarm.helpdesk@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 73592 03622</p>
+                        <p><i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/dir/?api=1&destination=Marwadi+University+Rajkot+Morbi+Road+Gujarat+India" style=" text-decoration: none;color: white;"> Marwadi University, Rajkot</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 AgriFarm. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

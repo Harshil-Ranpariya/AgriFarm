@@ -1,0 +1,42 @@
+body {
+      background: linear-gradient(135deg, #2e7d32 0%, #4CAF50 100%);
+      min-height: 100vh;
+    }
+    .container {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .bid-card {
+      border: 2px solid #4CAF50;
+      transition: all 0.3s;
+      position: relative;
+    }
+    .bid-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+    }
+    .live-badge {
+      animation: pulse 2s infinite;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+    .price-comparison {
+      background: #f8f9fa;
+      border-left: 4px solid #4CAF50;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+    .my-bid {
+      background: #e7f3ff;
+      border-left: 4px solid #007bff;
+    }
